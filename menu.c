@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define PI 3.14
 
 // Adicionando funcoes sem parametro para o calculo das opcoes do menu
 
@@ -41,6 +42,8 @@ void calcularAreaRetangulo()
     printf("A area do retangulo e igual a %d", arearet);
 }
 
+// Funcao para identificar o retangulo/quadrado
+
 void identificarRetangulo(){
 
     int base, altura;
@@ -62,6 +65,20 @@ void identificarRetangulo(){
     printf("\n\n");
 }
 
+void calcularAreaCiruclo(){
+
+    int raio,area;
+
+    prinf("(OP-4) Calcular a Area do Ciruclo \n\n");
+
+    printf("\nInforme o valor do raio do circulo: ");
+    scanf("%d",&raio);
+
+    area = raio * PI;
+
+    printf("A area do circulo e %d",area);
+}
+
 
 
 void main()
@@ -79,8 +96,8 @@ void main()
         // Opcoes do Menu
         printf("1. Calcular Area do Triangulo \n");
         printf("2. Calcular Area do Retangulo \n");
-        printf("3. Indentificar o Tipo de Retangulo \n");
-        printf("4. Imprimir Numeros de Vetor \n");
+        printf("3. Indentificar se e Retangulo ou quadrado \n");
+        printf("4. Calcular a area do circulo  \n");
         printf("5. Sair \n\n");
 
         // Mensagem para o usuario informar a opcao desejada
@@ -104,7 +121,7 @@ void main()
             break;
 
         case 4:
-
+            calcularAreaCirculo();
             break;
 
         case 5:
