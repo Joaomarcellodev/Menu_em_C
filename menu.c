@@ -8,18 +8,18 @@ void calcularAreaTriangulo()
     int base, altura, area;
 
     // Mensagem metodo relacionado ao  calculo area do triangulo
-    printf("(OP - !) Calcular a Area do triangulo\n\n");
+    printf("\n(OP - !) Calcular a Area do triangulo\n\n");
 
     // Informar os valores da base e altura para ser feito o calculo
     printf("\nInforme a base do triangulo: ");
     scanf("%d", &base);
 
-    printf("\nInforme a altura do triangulo: ");
+    printf("Informe a altura do triangulo: ");
     scanf("%d", &altura);
 
     area = base * altura / 2;
 
-    printf("A area do triangulo e %d \n", area);
+    printf("A area do triangulo e %d \n\n", area);
 }
 
 // Calculo da area do retangulo
@@ -39,60 +39,61 @@ void calcularAreaRetangulo()
 
     arearet = baseret * alturaret;
 
-    printf("A area do retangulo e igual a %d", arearet);
+    printf("A area do retangulo e igual a %d\n", arearet);
 }
 
 // Funcao para identificar o retangulo/quadrado
 
-void identificarRetangulo(){
+void identificarRetangulo()
+{
 
     int base, altura;
 
-    printf("(OP-3) Identificar a Area o Tipo de Retangulo\n\n");
+    printf("\n(OP-3) Identificar a Area o Tipo de Retangulo\n\n");
 
     printf("\n Informe a base: ");
     scanf("%d", &base);
 
-    printf("\n Informe a altura: ");
+    printf("Informe a altura: ");
     scanf("%d", &altura);
 
-    if( base == altura){
+    if (base == altura)
+    {
         printf("\nEle e um quadrado");
-    }else{
+    }
+    else
+    {
         printf("\nEle e um retangulo");
     }
 
     printf("\n\n");
 }
 
-void calcularAreaCiruclo(){
+void calcularAreaCirculo()
+{
 
-    int raio,area;
+    int raio, area;
 
-    prinf("(OP-4) Calcular a Area do Ciruclo \n\n");
+    printf("(OP-4) Calcular a Area do Ciruclo \n\n");
 
     printf("\nInforme o valor do raio do circulo: ");
-    scanf("%d",&raio);
+    scanf("%d", &raio);
 
-    area = raio * PI;
+    area = raio * raio * PI;
 
-    printf("A area do circulo e %d",area);
+    printf("\nA area do circulo e %d", area);
 }
-
-
 
 void main()
 {
 
     int op;
 
-    // Mensagem principal
-    printf("=== MENU PRINCIPAL ===\n\n");
-
     // Adicionando estrutura de repeticao para caso o usuario querer continuar no menu
-    while (op != 0)
+    while (op != 5)
     {
-
+        // Mensagem principal
+        printf("\n=== MENU PRINCIPAL ===\n\n");
         // Opcoes do Menu
         printf("1. Calcular Area do Triangulo \n");
         printf("2. Calcular Area do Retangulo \n");
