@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-
-
 // Adicionando funcoes sem parametro para o calculo das opcoes do menu
 
-void calcularAreaTriangulo(){
-    int base, altura,area;
+void calcularAreaTriangulo()
+{
+    int base, altura, area;
 
-    // Mensagem metod0 do calculo area do triangulo
+    // Mensagem metodo relacionado ao  calculo area do triangulo
     printf("(OP - !) Calcular a Area do triangulo\n\n");
 
     // Informar os valores da base e altura para ser feito o calculo
@@ -17,15 +16,30 @@ void calcularAreaTriangulo(){
     printf("\nInforme a altura do triangulo: ");
     scanf("%d", &altura);
 
-    area = base * altura /2;
+    area = base * altura / 2;
 
-    printf("A area do triangulo e %d \n" ,area);
-
+    printf("A area do triangulo e %d \n", area);
 }
 
-    // Adicionando funcao com parametro para calcular as opcoes do menu
+// Calculo da area do retangulo
 
+void calcularAreaRetangulo()
+{
 
+    int baseret, alturaret, arearet;
+
+    printf("(OP-2) Calcular a Area do Retangulo \n\n");
+
+    printf("\nInforme a base do Retangulo:");
+    scanf("%d", &baseret);
+
+    printf("\nInforme a altura do Retangulo: ");
+    scanf("%d", &alturaret);
+
+    arearet = baseret * alturaret;
+
+    printf("A area do retangulo e igual a %d", arearet);
+}
 
 void main()
 {
@@ -59,7 +73,7 @@ void main()
             break;
 
         case 2:
-
+            calcularAreaRetangulo();
             break;
 
         case 3:
