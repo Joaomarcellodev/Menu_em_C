@@ -41,6 +41,29 @@ void calcularAreaRetangulo()
     printf("A area do retangulo e igual a %d", arearet);
 }
 
+void identificarRetangulo(){
+
+    int base, altura;
+
+    printf("(OP-3) Identificar a Area o Tipo de Retangulo\n\n");
+
+    printf("\n Informe a base: ");
+    scanf("%d", &base);
+
+    printf("\n Informe a altura: ");
+    scanf("%d", &altura);
+
+    if( base == altura){
+        printf("\nEle e um quadrado");
+    }else{
+        printf("\nEle e um retangulo");
+    }
+
+    printf("\n\n");
+}
+
+
+
 void main()
 {
 
@@ -77,7 +100,7 @@ void main()
             break;
 
         case 3:
-
+            identificarRetangulo();
             break;
 
         case 4:
