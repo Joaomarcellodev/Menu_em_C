@@ -68,6 +68,6 @@ Sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
 
 - **Autor**: [João Marcello](https://github.com/Joaomarcellodev)  
 - **LinkedIn**: [João Marcello](https://www.linkedin.com/in/joaomarcellodev/)  
-- **Email**: joaomarcellodev@gmail.com  
+- **Email**: joaomarcellobraz@gmail.com  
 
 ---
